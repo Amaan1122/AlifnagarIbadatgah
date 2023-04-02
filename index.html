@@ -4,27 +4,32 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Alifnagar Mosque</title>
+	<title>Alifnagar Ibadatgah</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+	<script src="script.js"></script>
 </head>
 
 <body>
+	<audio src="assets/audio/IbadatgahAudio.mp3" id="ibadatgah_audio" loop="false" autoplay></audio>
 	<header>
-		<h2>Alifnagar Mosque</h2>
+		<h2>Alifnagar Ibadatgah</h2>
 		<ul class="nav">
 			<li>
-				<a href="#">Home</a>
+				<a href="#appeal">Appeal</a>
 			</li>
 			<li>
 				<a href="#about">About</a>
 			</li>
 			<li>
-				<a href="#vision">Vision</a>
+				<a href="#registration">Registration</a>
 			</li>
 			<li>
 				<a href="#gallery">Gallery</a>
+			</li>
+			<li>
+				<a href="#estimate">Estimate</a>
 			</li>
 			<li>
 				<a href="#donate">Donate</a>
@@ -36,10 +41,23 @@
 	</header>
 	<section class="banner-area">
 		<div class="banner-img"></div>
-		<h1>God is <span><u>Almigthy</u></span></h1>
+		<h1><span>Allah is <u>almighty</u></span></h1>
 		<h2>Join The Path Of Spirituality</h2>
-		<h2>Donate For Masjid</h2>
-		<h3>Welcoming our fellow Muslim brothers to join hands with us in prayer at our sacred mosque</h3>
+		<h2>Donate For Ibadatgah</h2>
+		<h3 class="quote">"Whoever builds a masjid for the sake of Allah , Allah will build something similar for him in
+			Paradise",
+			<span>{Sahih Bukhari : 450, Sahih Muslim : 533}</span>
+		</h3>
+		<h3>Welcoming our fellow Muslim brothers to join hands with us in prayer at our sacred Ibadatgah</h3>
+	</section>
+
+	<section class="appeal-area" id="appeal">
+		<h3 class="section-title">Appeal</h3>
+		<ul class="appeal-content">
+			<li>
+				<img alt="appeal" src="assets/images/appeal.jpg">
+			</li>
+		</ul>
 	</section>
 
 	<section class="about-area" id="about">
@@ -48,10 +66,26 @@
 			<li class="about-right">
 				<h2>We are Taking Small Steps for our muslim community</h2>
 				<h3><i class="fa fa-arrow-right"></i> We started our journey very before. Now this place will be served
-					as a prayer place.</h3>
-				<h3><i class="fa fa-arrow-right"></i> We are a team on way to build Mosque for a
-					society. We are making it ease to our muslim brothers to attend prayer 5 times by building a Mosque.
+					as a prayer place and learning place for children as a Madrassa.</h3>
+				<h3><i class="fa fa-arrow-right"></i> We are making it ease to our muslim brothers to attend prayer 5
+					times and seek islamic knowledge from Madrassa by building this Ibadatgah.
 				</h3>
+			</li>
+		</ul>
+	</section>
+
+
+	<section class="registration-area" id="registration">
+		<h3 class="section-title">Registration</h3>
+		<ul class="registration-content">
+			<li>
+				<img alt="registration" src="assets/images/registration.jpg">
+			</li>
+			<li>
+				<img alt="bandharan" src="assets/images/bandharan.jpg">
+			</li>
+			<li>
+				<img alt="bandharan-2" src="assets/images/bandharan-2.jpg">
 			</li>
 		</ul>
 	</section>
@@ -76,27 +110,42 @@
 		<h3 class="section-title">Ongoing Construction Photos</h3>
 		<ul class="gallery-content">
 			<li>
-				<img alt="" src="images/1.jpeg">
+				<img alt="gallery1" src="assets/images/1.jpeg">
 			</li>
 			<li>
-				<img alt="" src="images/3.jpeg">
+				<img alt="gallery2" src="assets/images/3.jpeg">
 			</li>
 
 			<li>
 
-				<video width="320" height="240" autoplay controls>
-					<source src="images/vid2.mp4" type="video/mp4">
+				<video width="320" height="340" autoplay controls>
+					<source src="assets/video/vid1.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
 			</li>
 			<li>
 
-				<video width="320" height="240" autoplay controls>
-					<source src="images/vid1.mp4" type="video/mp4">
+				<video width="320" height="340" autoplay controls>
+					<source src="assets/video/vid2.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
 			</li>
 
+		</ul>
+	</section>
+
+	<section class="estimate-area" id="estimate">
+		<h3 class="section-title">Estimate</h3>
+		<ul class="estimate-content">
+			<li>
+				<img alt="estimate" src="assets/images/estimate.jpg">
+			</li>
+			<li>
+				<img alt="estimate-2" src="assets/images/estimate-2.jpg">
+			</li>
+			<li>
+				<img alt="estimate-3" src="assets/images/estimate-3.jpg">
+			</li>
 		</ul>
 	</section>
 
@@ -106,25 +155,25 @@
 			<h3>You can donate to us through the given bank details below. For query or any discussion before donating
 				you can contact to our Trustees on their given contact number</h3>
 			<div class="card card-left">
-				<h2><i><u>Bank Transfer</u></i></h2>
+				<h2><i><u>Bank Transfer / NEFT/RTGS</u></i></h2>
 				<div class="card-body">
 					<h3>Acc Name : <span>ALIFNAGAR IBADATGAH AND MADRESSA WAQF</span></h3>
 					<h3>Acc No : <span>02350200000730</span></h3>
-					<h3>IFSC Code : <span>BARB0VJBILI</span></h3>
+					<h3>IFSC Code : <span>BARB0BILIMO (5th Digit Is Zero)</span></h3>
 					<h3>Bank Name : <span>Bank Of Baroda</span></h3>
-					<h3>Branch Name : <span>Bilimora Branch</span></h3>
+					<h3>Branch Name : <span>Jawahar Road Bilimora Branch</span></h3>
+					<h3>MICR Code : <span>396012091</span></h3>
 				</div>
 			</div>
-			<div class="card card-rigth">
-				<!-- <div class="card-body">
-					<h3>Acc Name : <span>ALIFNAGAR IBADATGAH AND MADRESSA WAQF</span></h3>
-					<h3>Acc No : <span>02350200000730</span></h3>
-					<h3>IFSC Code : <span>BARB0VJBILI</span></h3>
-					<h3>Bank Name : <span>Bank Of Baroda</span></h3>
-					<h3>Branch Name : <span>Bilimora Branch</span></h3>
-				</div> -->
+			<div class="card card-right">
+				<li>
+					<img alt="cheque" src="assets/images/cheque.jpg">
+				</li>
 			</div>
 		</ul>
+		<h3>Note : If you donate any amount, please drop a message on given contact no. or email id to receive Donation
+			Receipt
+		</h3>
 	</section>
 
 	<section class="contact-area" id="contact">
@@ -140,13 +189,14 @@
 			</li>
 			<li>
 				<i class="fa fa-phone"></i>
-				<p><b>Naim Qureshi : </b>+91 9998312221<br>
-				<p><b>Aarif Patel : </b>+91 9727447344<br>
+				<p><b>Shaukatali Shaikh (President) : </b>+91 9898558212<br>
+				<p><b>Naim Mistry (Secretary): </b>+91 9998312221<br>
+				<p><b>Aarif Patel (Treasurer): </b>+91 9727447344<br>
+				<p><b>Sabirahmed Shaikh (Member): </b>+91 9558570217<br>
 			</li>
 			<li>
 				<i class="fa fa-envelope"></i>
-				<p>info@bishop.com<br>
-					yourdomain@website.com</p>
+				<p>alifnagaribadatgah@gmail.com</p>
 			</li>
 		</ul>
 	</section>
@@ -154,6 +204,7 @@
 	<footer>
 		<p>All Right Reserved by Alifnagar Muslim Trust</p>
 	</footer>
+
 </body>
 
 </html>
